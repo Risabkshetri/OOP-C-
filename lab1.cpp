@@ -8,7 +8,7 @@ int main()
     int a, b; 
     cout << "Enter two numbers: \n";
     cin >> a >> b;
-    cout << "" a + b;
+    cout << "" << a + b;
 }
 
 //2. Raising number n to a power p is the same as multipzlying n with itself p times //

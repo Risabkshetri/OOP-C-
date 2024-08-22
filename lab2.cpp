@@ -20,3 +20,4 @@ int main(){
     p3.y = p1.y + p2.y;
     cout << "Coordinate of p1 + p2 : " << "(" << p3.x << ", " << p3.y << ")";
 }
+

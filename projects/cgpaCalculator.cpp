@@ -44,6 +44,6 @@ int main(){
         totalGradepoint += gradePoint[i];
         cout << gradePoint[i] <<" ";
     };
-    int cgpa = totalGradepoint / noOfSubject;
+    float cgpa = totalGradepoint / noOfSubject;
     cout << endl << "Your CGPA = " << cgpa;
-};
+}

@@ -5,6 +5,7 @@ class Base{
     protected:
      int x;
     public:
+
     void input(){
         cout << "Enter the value of x: ";
         cin >> x;

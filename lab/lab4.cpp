@@ -35,7 +35,8 @@ class Students {
       string name;
 
    public:
-      Students(string studentName) : name(studentName) {}friend void showStudentName(Students& s);
+      Students(string studentName) : name(studentName) {}
+      friend void showStudentName(Students& s);
 };
 
 void showStudentName(Students& s) {

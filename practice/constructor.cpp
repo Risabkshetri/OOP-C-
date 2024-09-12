@@ -38,7 +38,7 @@ public:
     string category;
     float avgWeight;
     animal(string animalName, string animalCategory, float animalAvgWt);
-};
+}; 
 
 animal::animal(string animalName, string animalCategory, float animalAvgWt)
     {

@@ -1,23 +1,70 @@
-#include<iostream> 
-// using namespace std; 
-// class Students {
-//    public:             
-//    class Friends {
-//       private:
-//       string contactNo;
-//       public:
-//       void getdata(string n) {
-//         contactNo = n;
-//       }
-//       void putdata() {
-//          cout << "My contact number is " << contactNo;
-//       }
-//    };
+// #include<iostream>
+// using namespace std;
+
+// class Calcultion {
+//     protected:
+//     int num1 = 10, num2 = 20;
+
+//     public:
+//     void operations(){
+//         cout << "sum = " << num1 + num2 << endl;
+//     }
 // };
-// int main() {
-//    cout<<"Nested classes in C++"<< endl;
-//    Students :: Friends myFriend;
-//    myFriend.getdata("+9139598765");
-//    myFriend.putdata();
-//    return 0;
+
+// class multiplication : public Calcultion{
+//     public:
+//     void operations(){
+//         cout << "Multiplication : " << num1*num2 << endl;
+//     }
+// };
+// int main(){
+//    Calcultion c;
+//    multiplication m;
+//    m.operations();
+//    c.operations();
 // }
+
+
+// implementation of virtual function
+
+#include<iostream>
+using namespace std;
+
+class Base{
+    public:
+    int num;
+
+    virtual void setmember(){
+        cout << "Enter the value of x : ";
+        cin >> num;
+    }
+    virtual void disp(){
+        cout << num << " is member of base class." << endl;
+        
+    }
+
+};
+
+class Derived_class : public Base{
+    public:
+    void setmember() override{
+        cout << "Enter value of x : ";
+        cin >> num;
+    }
+    void disp() override{
+        cout << num << " is member of derived class";
+    }
+};
+
+int main(){
+    Base b;
+    Derived_class d;
+
+    b.setmember();
+    b.disp();
+
+    d.setmember();
+    d.disp();
+
+    return 0;
+}

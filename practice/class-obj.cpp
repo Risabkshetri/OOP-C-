@@ -1,35 +1,35 @@
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// class student {
-//     public:
-//      string name;  // No need to worry about the size; it grows dynamically.
-//      int rollno;
-//      float marks;
-//      void bio(){
-//         cout << "Name: " << name << endl;
-//         cout << "RollNo: " << rollno << endl;
-//         cout << "Marks: " << marks << endl;
-//      };
-// };
+class student {
+    public:
+     string name;// No need to worry about the size; it grows dynamically.
+     int rollno;
+     float marks;
+     void bio(){
+        cout << "Name: " << name << endl;
+        cout << "RollNo: " << rollno << endl;
+        cout << "Marks: " << marks << endl;
+     };
+};
 
-// int main(){
-//     student ugStudent;
-//     cout << "Enter Name: " << endl;
-//     cin.ignore();
-//     getline(cin, ugStudent.name);  // We can input very long names here.
-//     cout << "Enter Rollno: " << endl;
-//     cin >> ugStudent.rollno;
-//     cout << "Enter Marks: " << endl;
-//     cin >> ugStudent.marks;
+int main(){
+    student ugStudent;
+    cout << "Enter Name: " << endl;
+    cin.ignore();
+    getline(cin, ugStudent.name);// We can input very long names here.
+    cout << "Enter Rollno: " << endl;
+    cin >> ugStudent.rollno;
+    cout << "Enter Marks: " << endl;
+    cin >> ugStudent.marks;
     
-//     ugStudent.bio();
-//     return 0;
-// }
+    ugStudent.bio();
+    return 0;
+}
 
 
 #include<iostream>
-#include<iomanip>  // Include this for formatting
+#include<iomanip>// Include this for formatting
 using namespace std;
 
 class student {
@@ -56,7 +56,7 @@ int main(){
     for(int i=0; i<noOfStudents; i++){
     cout << "Enter Name: " << endl;
     cin.ignore();
-    getline(cin, ugStudent[i].name);  // Get full name including spaces
+    getline(cin, ugStudent[i].name); // Get full name including spaces
     cout << "Enter Rollno: " << endl;
     cin >> ugStudent[i].rollno;
     cout << "Enter Marks: " << endl;

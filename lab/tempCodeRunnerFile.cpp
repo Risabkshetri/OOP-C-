@@ -71,19 +71,47 @@
 
 // constructor overloading
 
+// #include<iostream>
+// using namespace std;
+
+// class Base{
+//     public:
+//     int num;
+
+//     Base(){
+//         cout << "Enter the value of x : ";
+//         cin >> num; 
+//     }
+
+//     Base(int x){
+//         num = x;
+//     }
+// };  
+
 #include<iostream>
 using namespace std;
 
-class Base{
+class User{
+    private:
+    string userName;
+    string Email;
+    string password;
+
     public:
-    int num;
+    void setter(string name, string email, string pass){
+        userName = name;
+        Email = email;
+        password = pass;
 
-    Base(){
-        cout << "Enter the value of x : ";
-        cin >> num; 
     }
+    void getter(){
+       cout << "User Name: " << userName << endl << "Email: " << Email << endl << "Password: " << password;
 
-    Base(int x){
-        num = x;
-    }
-};  
+    };
+};
+
+int main(){
+    User myUser;
+    myUser.setter("Rishab", "risaw@.com", "risaw124");
+    myUser.getter();
+}

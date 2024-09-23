@@ -17,6 +17,7 @@ int main(){
     student ugStudent;
     cout << "Enter Name: " << endl;
     cin.ignore();
+    
     getline(cin, ugStudent.name);// We can input very long names here.
     cout << "Enter Rollno: " << endl;
     cin >> ugStudent.rollno;

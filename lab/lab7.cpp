@@ -21,6 +21,7 @@ int main()
     return 0;
 }
 
+
 // multiple inheritance
 #include <iostream>
 using namespace std;
@@ -53,7 +54,8 @@ int main()
     return 0;
 }
 
-// Multilevel Inheritance  #include <iostream>
+// Multilevel Inheritance  
+#include <iostream>
 using namespace std;
 
 // base class
@@ -90,42 +92,41 @@ int main()
     return 0;
 }
 
-// Multilevel Inheritance  #include <iostream>
-using namespace std;
+// Hierarchical Inheritance 
+#include <iostream>  
+using namespace std;  
+   
+// base class  
+class Vehicle   
+{    
+    public:      
+  Vehicle()  
+    {  
+      cout << "This is a Vehicle" << endl;  
+    }  
+};  
+   
+   
+// first sub class   
+class Car: public Vehicle  
+{  
+   
+};  
+   
+// second sub class  
+class Bus: public Vehicle  
+{  
+       
+};  
+   
+// main function  
+int main()  
+{     
+    Car obj1;     
+    Bus obj2;     
+    return 0;  
+}  
 
-// base class
-class Vehicle
-{
-public:
-    Vehicle()
-    {
-        cout << "This is a Vehicle" << endl;
-    }
-};
-class fourWheeler : public Vehicle
-{
-public:
-    fourWheeler()
-    {
-        cout << "Objects with 4 wheels are vehicles" << endl;
-    }
-};
-// sub class derived from two base classes
-class Car : public fourWheeler
-{
-public:
-    Car()
-    {
-        cout << "Car has 4 Wheels" << endl;
-    }
-};
-
-// main function
-int main()
-{
-    Car obj;
-    return 0;
-}
 
 // C++ program for Hybrid Inheritance
 

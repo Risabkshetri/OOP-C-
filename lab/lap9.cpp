@@ -4,12 +4,12 @@ using namespace std;
 
 template <typename T> T myMax(T x, T y){
     return (x>y)? x : y;
-}
+};
 int main(){
     int max;
-    cout << myMax<int>(2, 4) << endl;
-    cout << myMax<float>(6.9, 8.8) << endl;
-    cout << myMax<char>('g', 'e');
+    cout << "Max = " << myMax<int>(2, 4) << endl;
+    cout << "Max = " << myMax<float>(6.9, 8.8) << endl;
+    cout << "Max = " << myMax<char>('g', 'e');
 }
 // class template
 #include<iostream>
@@ -31,6 +31,7 @@ class Array{
        };
        
        void print(){
+            cout << "List = ";
            for(int i = 0; i<size; i++){
                cout << ptr[i] << " ";
            };

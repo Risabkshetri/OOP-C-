@@ -54,14 +54,14 @@ class Calcultion {
     int num1 = 10, num2 = 20;
 
     public:
-    void operations(){
+    virtual void operations(){
         cout << "sum = " << num1 + num2 << endl;
     }
 };
 
 class multiplication : public Calcultion{
     public:
-    void operations(){
+    void operations()override{
         cout << "Multiplication : " << num1*num2 << endl;
     }
 };
